@@ -1,20 +1,31 @@
 <div class="photo_info_plage" style="background-image: url('{{image}}');">
     
     <h1>{{ title }}</h1>
+    
+    
+    
 </div>
 <div class="row">
     <div class="col-md-3">    
         <h2>Météo</h2>
+        <img src="http://openweathermap.org/img/w/{{icon}}.png" width="100px">
+        <p>{{ meteo }}</p>
+        <p>température: {{ temp }}°C</p>
     </div>
     <div class="col-md-3">    
         <h2>Marée</h2>
         <p>coéficient de la marée {{ coef }}</p>
     </div>
     <div class="col-md-3">    
-        <h2>Indice UV</h2>
+        <h2>Sunrise</h2>
+        <p><mydate>{{ leve * 1000 | date:' HH:mm '}}</mydate></p>
+        <h2>Sunset</h2>
+        <p><mydate>{{ couche * 1000 | date:' HH:mm '}}</mydate></p>
     </div>
     <div class="col-md-3">    
-        <h2>Drapeau</h2>
+        <h2>Vent</h2>
+        <p>vitesse: {{ wind }}km/h </p>
+        <p>{{ winddirection }}</p>
     </div>
 </div>
 <div class="row">

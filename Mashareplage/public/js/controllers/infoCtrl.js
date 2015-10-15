@@ -17,20 +17,29 @@ function infoCtrl($scope, $routeParams, infoService) {
     
     $scope.shom = function(){
         infoService.getshom(ville[selectedPlage].shomid).then(function(res){
-            console.log(res);
+            
             $scope.coef = Math.round(((res.data.records[0].fields.pmve)-(res.data.records[0].fields.bmve))/6.1); 
         });
     }
     
     $scope.shom();
-    
+
      $scope.weather = function(){
         infoService.getwheater(ville[selectedPlage].weatherid).then(function(res){
-            console.log(res)});
-            
-    }
+            console.log(res);
+            $scope.temp = Math.round(res.data.main.temp - 273.15);
+            $scope.wind = Math.round(res.data.wind.speed*3.6);
+            $scope.winddirection = res.data.wind.deg;
+            $scope.meteo = res.data.weather[0].description;
+            $scope.icon = res.data.weather[0].icon;
+            console.log(res.data.sys.sunrise);
+            console.log(res.data.sys.sunset);
+            $scope.leve = res.data.sys.sunrise;
+            $scope.couche = res.data.sys.sunset;
+            });        
+    }   
     
-
+    $scope.weather();
     
     
 }
