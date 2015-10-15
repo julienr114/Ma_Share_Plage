@@ -4,8 +4,8 @@ function config($routeProvider) {
 			templateUrl: 'views/accueil.html',
 			controller: 'mainController'
 		})
-		.when('/about', {
-			templateUrl: 'views/about.html'
+		.when('/info', {
+			templateUrl: 'views/info.html'
 		})
 		.otherwise({
 			redirectTo: '/'
