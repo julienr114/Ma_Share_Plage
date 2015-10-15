@@ -1,7 +1,7 @@
 function config($routeProvider) {
 	$routeProvider
 		.when('/', {
-			templateUrl: 'views/main.html',
+			templateUrl: 'views/accueil.html',
 			controller: 'mainController'
 		})
 		.when('/about', {

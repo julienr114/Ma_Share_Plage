@@ -24,11 +24,20 @@ body{
 	transform: rotate(360deg);
 }  
 
-
+.container{
+	width: 60%;
+	margin: auto;
+}
 
 /*------------ $ ACCUEIL---------------------------------*/
 
 
+.accueil{
+	text-align: center;
+}
+.accueil p,.btn-accueil, .selection-plage{
+	margin: 30px;
+}
 
 
 
