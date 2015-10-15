@@ -1,11 +1,11 @@
 function config($routeProvider) {
 	$routeProvider
 		.when('/', {
-			templateUrl: 'views/accueil.html',
-			controller: 'mainController'
+			templateUrl: 'views/accueil.html'
 		})
-		.when('/info', {
-			templateUrl: 'views/info.html'
+		.when('/info/:plage', {
+			templateUrl: 'views/info.html',
+            controller: 'infoCtrl'
 		})
 		.otherwise({
 			redirectTo: '/'
@@ -21,8 +21,8 @@ function run($rootScope, $location){
 
 angular.module('app', ['ngRoute'])
     .config(config)
-    .controller('mainController', mainController)
-    .service('todoService', todoService)
+    .controller('infoCtrl', infoCtrl)
+    .service('infoService', infoService)
     /*.factory('', )*/
     .run(run);
 
