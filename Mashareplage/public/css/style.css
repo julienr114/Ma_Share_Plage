@@ -8,22 +8,6 @@
 
 
 /*------------ $ GENERAL---------------------*/
-body{
-    padding-top: 70px;
-}
-
-.navbar-border{
-	border-bottom: 3px solid #F0DB4F;
-}
-
-.navbar-header img{
-	transition: 0.4s;
-}
-
-.navbar-header img:hover{
-	transform: rotate(360deg);
-}  
-
 .container{
 	width: 60%;
 	margin: auto;
@@ -43,3 +27,13 @@ body{
 
 
 /*------------ $ INFORMATION-----------------------------*/
+.photo_info_plage{
+	/*height: 150px;*/
+	/*min-height: 300px;
+	width: auto;*/
+	/*background-repeat: no-repeat;*/
+	/*background-position: absolute;*/
+	background-attachment: cover;
+	background-size: 100%;
+	height: 300px;
+}
