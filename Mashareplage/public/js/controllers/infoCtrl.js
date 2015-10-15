@@ -15,14 +15,14 @@ function infoCtrl($scope, $routeParams, infoService) {
     $scope.title = ville[selectedPlage].title;
     
     $scope.shom = function(){
-        infoService.getshom(ville[selectedPlage].shomid), function(res){
-            console.log(res);  
-            $scope.maree = res;
-            console.log($scope.maree)};
-        };
+        infoService.getshom(ville[selectedPlage].shomid).then(function(res){
+            console.log(res);
+            $scope.coef = (((res.data.records[0].fields.pmve)-(res.data.records[0].fields.bmve))/6.1);
+            
+        });
+    }
     
     
 }
         
-    
     
