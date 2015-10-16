@@ -3,13 +3,13 @@ function infoCtrl($scope, $routeParams, infoService) {
     var selectedPlage = $routeParams.plage;
     
     var ville = {
-        Berck: { title: "Berck sur mer plage", shomid: "berck", weatherid: "3033415", image: "img/berk_sur_mer_plage.jpg", lat: 50.4, lng: 1.6 },
-        SaintMalo: { title: "Grande Plage Saint-Malo", shomid: "saint-malo", weatherid: "2978640", image: "img/st_malo.jpg", lat: 48.65, lng: -2.02 },
-        Royan: { title: "Grande Conche Royan", shomid: "royan", weatherid: "2982343", image: "img/royan.jpg", lat: 45.63, lng: -1.03 },
-        Hendaye: { title: "Plage des deux Jumeaux Hendaye", shomid: "hendaye", weatherid: "3013534", image: "img/hendaye_2_jumeaux.jpg", lat: 43.37, lng: -1.77 },
-        Porquerolles: { title: "Plage d'Argent Ils de Porquerolles", shomid: "saint tropez", weatherid: "3012937", image: "img/porquerolles_plage_dargent.jpg", lat: 43.12, lng: 6.14 },
-        Ajaccio: { title: "Plage Saint-François Ajaccio", shomid: "ajaccio", weatherid: "6452235", image: "img/ajacio.jpg", lat: 41.92, lng: 8.73 },
-        LaLoupe: { title: "Wild Code Schools Plage La Loupe", shomid: "", weatherid: "3008418", image: "img/wcs_plage.jpg", lat: 48.47, lng: 1.02 }
+        Berck: { title: "Berck sur mer plage - Berck", shomid: "berck", weatherid: "3033415", image: "img/berk_sur_mer_plage.jpg", lat: 50.4, lng: 1.6 },
+        SaintMalo: { title: "Grande Plage - Saint-Malo", shomid: "saint-malo", weatherid: "2978640", image: "img/st_malo.jpg", lat: 48.65, lng: -2.02 },
+        Royan: { title: "Grande Conche - Royan", shomid: "royan", weatherid: "2982343", image: "img/royan.jpg", lat: 45.63, lng: -1.03 },
+        Hendaye: { title: "Plage des deux Jumeaux - Hendaye", shomid: "hendaye", weatherid: "3013534", image: "img/hendaye_2_jumeaux.jpg", lat: 43.37, lng: -1.77 },
+        Porquerolles: { title: "Plage d'Argent - Ile de Porquerolles", shomid: "saint tropez", weatherid: "3012937", image: "img/porquerolles_plage_dargent.jpg", lat: 43.12, lng: 6.14 },
+        Ajaccio: { title: "Plage Saint-François - Ajaccio", shomid: "ajaccio", weatherid: "6452235", image: "img/ajaccio.jpg", lat: 41.92, lng: 8.73 },
+        LaLoupe: { title: "Wild Code Schools Plage - La Loupe", shomid: "", weatherid: "3008418", image: "img/wcs_plage.jpg", lat: 48.47, lng: 1.02 }
         }
     
     $scope.title = ville[selectedPlage].title;
